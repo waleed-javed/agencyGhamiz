@@ -1,0 +1,97 @@
+@use "../../../abstract/index" as *;
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 130px;
+    display: flex;
+    color: $font-color;
+    align-items: center;
+    font-size: $standard-text;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    background-color: $background-fierce-dark;
+}
+
+.logo-container{
+    // background-color: red;
+    padding-left: 118px;
+    .logo{
+        font-weight: bold;
+        font-size: $logo-font-desktop;
+        text-transform: uppercase;
+    }
+}
+
+
+.primary-navigation {
+    gap: 3.5rem;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    // font-style: ;
+    
+    li{
+        &:hover{
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+        }
+     a{
+         text-decoration: none;
+         color: $font-color;
+        }
+    }
+}
+
+.action-btn-container{
+    padding-right: 120px;
+        a{
+            text-decoration: none;
+            color: $font-color;
+        }
+
+    .action-call{
+        border: 2px solid $font-color;
+        padding: 11px 23px;
+        border-radius: 25px;
+    }
+}
+
+
+
+
+
+// Mobile responsiveness
+@media (max-width: 900px ) {
+    .toolbar {
+        justify-content: center;
+    }
+
+    .logo-container{
+        padding: 0;
+        .logo{
+            font-size: max($logo-font-mobile , $logo-font-tab);
+        }
+    }
+    
+    .action-btn-container,
+    .primary-navigation{
+        display: none;
+    }
+    
+}
+
+// Mobile responsiveness
+@media (max-width: 35em ) {
+    .logo{
+        font-size: min($logo-font-mobile , $logo-font-tab);
+    }
+
+    .action-btn-container,
+    .primary-navigation{
+        display: none;
+    }
+    
+}

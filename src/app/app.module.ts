@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
 import { TickerMarqueeComponent } from './components/ticker-marquee/ticker-marquee.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationMenuComponent,
-    TickerMarqueeComponent
+    TickerMarqueeComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

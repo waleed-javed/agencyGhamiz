@@ -2,7 +2,9 @@
 @use "./abstract/index" as *;
 
 body{
-    background: $background-fierce-dark;
+    padding: 0;
+    margin: 0;
+    // background: $background-fierce-dark;
 }
 
 /*--------------*/

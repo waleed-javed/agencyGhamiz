@@ -1,20 +1,18 @@
 @use "../../../abstract/index" as *;
 
 .marquee {
-    border:1px solid $font-color;
     display: inline-block;
     margin: 3rem auto 0;
     max-width: 100VW;
-    background-color: white;
+    background-color: $light-purple;
     overflow: hidden;
-    padding: 0;
     position: relative;
 }
 
 span {
-  font-family: "Recoleta";
-  font-weight: 900;
-    color: $primary-energetic-purple;
+  font-family: "Lato";
+  font-weight: 600;
+    color: $background-fierce-dark;
     font-size: 1.2rem;
     display: inline-block;
     padding: .7rem 1.4rem;

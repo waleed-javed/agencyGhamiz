@@ -1,0 +1,44 @@
+@use "../../../abstract/index" as *;
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $font-color;
+    font-family: "Recoleta";
+    overflow: hidden;
+    background: $background-fierce-dark;
+}
+
+.title-container {
+    display: flex;
+    padding: 3rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1{
+        font-size: 4.5rem;
+        line-height: 102px;
+    }
+
+    h2{
+        display: flex;
+        align-items: center;
+        gap:0.5rem;
+        margin-top: -36px;
+        font-size: 1.68rem;
+        font-weight: 300;
+        line-height: 28px;
+        font-family: "Lato";
+        .long-dash{
+            display: block;
+            border-radius: 2px;
+            width: 46px;
+            height: 2px;
+            background: $light-purple;       
+        }
+    }
+        
+}

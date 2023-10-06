@@ -8,6 +8,22 @@
     font-family: "Recoleta";
     overflow: hidden;
     background: $background-fierce-dark;
+    // position: relative;
+}
+
+.hero-grid{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    opacity:0.3;
+}
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
 }
 
 .title-container {
@@ -32,6 +48,7 @@
         font-weight: 300;
         line-height: 28px;
         font-family: "Lato";
+        color: $light-purple;
         .long-dash{
             display: block;
             border-radius: 2px;
@@ -42,3 +59,63 @@
     }
         
 }
+
+
+
+// Responsive xsm:320
+
+@media (max-width: $xsm) {
+
+    .hero-grid{ display: none;}
+
+    .title-container {
+        padding: 1rem ;
+        text-align: center;
+    
+        h1{
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+    
+        h2{
+            margin-top: 6px;
+            font-size: 1rem;
+            font-weight: 300;
+            font-family: "Lato";
+            .long-dash{
+                display: none;       
+            }
+        }
+            
+    }
+}
+
+// min 320 to max 480
+@media (min-width: $xsm) and (max-width:$sm){
+
+    .hero-grid{ display: none;}
+
+    
+    .title-container {
+        padding: 1rem ;
+        text-align: center;
+        h1{
+            font-size: 2.5rem;
+            line-height: 1;
+
+        }
+    
+        h2{
+            margin-top: 6px;
+            font-size: 1rem;
+            font-weight: 300;
+            font-family: "Lato";
+            .long-dash{
+                display: none;       
+            }
+        }
+            
+    }
+
+}
+

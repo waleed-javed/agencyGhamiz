@@ -1,27 +1,9 @@
 // import all theme data that is to be used in project
 @use "./abstract/index" as *;
 
-body{
+*{
     padding: 0;
     margin: 0;
+
     // background: $background-fierce-dark;
-}
-
-/*--------------*/
-/* Utility Classes*/
-/*--------------*/
-
-/*General*/
-.flex{
-    display: flex;
-    gap: var(--gap,1rem);
-}
-
-.grid{
-    display: grid;
-    gap: var(--gap,1rem);
-}
-
-.d-block{
-display: block;
 }

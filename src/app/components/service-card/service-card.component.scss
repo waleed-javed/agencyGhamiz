@@ -1,0 +1,64 @@
+@use "../../../abstract/index" as *;
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 16px;
+    padding: 5rem 2.25rem;
+    height: 250px;
+
+    &:hover{
+        cursor: pointer;
+        border-color: $light-purple;
+        box-shadow: rgba(166, 132, 211, 0.4) 0px 2px 10px 0px, rgba(166, 132, 211, 0.5) 0px 2px 25px 0px;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+
+// @keyframes glowing {
+//     0% {
+//       transform: rotate(0);
+//     }
+//     100% {
+//       transform: rotate(360deg);
+//     }
+//   }
+  
+ 
+.logo-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+
+.title-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem 0px 0.2rem 0;
+
+    h1{
+
+        font-family: "Recoleta";
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+.description-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p{
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}

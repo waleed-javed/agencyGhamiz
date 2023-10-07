@@ -5,10 +5,9 @@
     flex-direction: column;
     justify-content: center;
     color: $font-color;
+    background: $background-fierce-dark;
     font-family: "Recoleta";
     overflow: hidden;
-    background: $background-fierce-dark;
-    // position: relative;
 }
 
 .hero-grid{
@@ -19,47 +18,96 @@
     height: auto;
     opacity:0.3;
 }
-.mobile{
-    display: none;
-}
-.desktop{
-    display: block;
-}
 
 .title-container {
     display: flex;
-    padding: 3rem 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    padding: 5.5rem 0;
+    z-index: 999;
     h1{
-        font-size: 4.5rem;
-        line-height: 102px;
+        font-weight: 400;
+        // font-size: 4.5rem;
+        font-size: 7.5rem;
+        line-height: 7.5rem;
     }
 
     h2{
         display: flex;
+        flex-direction: row;
         align-items: center;
-        gap:0.5rem;
-        margin-top: -36px;
+        gap:1rem;
+        // background-color: red;
+        margin: 32px 0;
         font-size: 1.68rem;
         font-weight: 300;
         line-height: 28px;
         font-family: "Lato";
         color: $light-purple;
-        .long-dash{
-            display: block;
-            border-radius: 2px;
-            width: 46px;
-            height: 2px;
-            background: $light-purple;       
-        }
+    }
+
+    .long-dash{
+        align-items: center;
+        border-radius: 2px;
+        width: 36px;
+        height: 5px;
+        margin-top: 5px;
+        background: $light-purple;       
     }
         
 }
 
+.ticker-container{
+    padding: 2rem 0;
+    background: $background-fierce-dark;
+}
+
+.spacer{
+    margin: 7rem;
+}
+// services styles
+.services-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.services-title-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    h1{
+        margin: 0;
+        font-size: 4.5rem;
+        font-weight: 400;
+    }
+
+    h2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        line-height: 80px;
+        gap:1rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        font-family: "Lato";
+    }
+
+    .long-dash{
+        align-items: center;
+        border-radius: 2px;
+        width: 36px;
+        height: 5px;
+        margin-top: 5px;
+        background: $background-fierce-dark;       
+        // background: $light-purple;       
+    }
+
+}
 
 
 // Responsive xsm:320

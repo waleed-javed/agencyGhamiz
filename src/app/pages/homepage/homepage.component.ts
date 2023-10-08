@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent{
-
   // constructor(@Inject(DOCUMENT) private document:Document){}
 }
   

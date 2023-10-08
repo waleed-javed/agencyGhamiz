@@ -8,6 +8,10 @@ import { TickerMarqueeComponent } from './components/ticker-marquee/ticker-marqu
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AgencyServicesComponent } from './components/agency-services/agency-services.component';
 import { ServiceCardComponent } from './components/service-card/service-card.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { TickerMarqueeLightComponent } from './components/ticker-marquee-light/ticker-marquee-light.component';
+import { PortfolioProjectsComponent } from './components/portfolio-projects/portfolio-projects.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +21,10 @@ import { ServiceCardComponent } from './components/service-card/service-card.com
     HomepageComponent,
     AgencyServicesComponent,
     ServiceCardComponent,
+    PortfolioComponent,
+    BannerComponent,
+    TickerMarqueeLightComponent,
+    PortfolioProjectsComponent,
   ],
   imports: [
     BrowserModule,

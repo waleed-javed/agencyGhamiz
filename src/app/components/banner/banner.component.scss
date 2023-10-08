@@ -1,0 +1,59 @@
+@use "../../../abstract/index" as *;
+
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-fierce-dark;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.75rem;
+    padding: 7rem 5rem;
+    background:radial-gradient(circle, rgba(166, 132, 211, 0.66), 73%, white), url(https://grainy-gradients.vercel.app/noise.svg);
+    filter: contrast(170%);
+    border-radius: 32px;
+
+    .banner-left-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        flex:0.6;
+        font-family: "Recoleta";
+
+        h1{
+            font-size: 5rem;
+            font-weight: 400;
+            line-height: 71.4px;
+        }
+
+        .portfolio-stats{
+            display: flex;
+            flex-direction: row;
+            gap: 2.1rem;
+            .stats{
+                font-size: 1.25rem;
+
+                span{
+                    font-size: 4.4rem;
+                }
+            }
+        }
+    }
+
+    .banner-right-side{
+        flex: 0.4;
+        p{
+            text-align: center;
+            font-family: "Lato";
+            font-weight:600;
+            font-size: 2.5rem;
+        }
+            
+    }
+    
+}

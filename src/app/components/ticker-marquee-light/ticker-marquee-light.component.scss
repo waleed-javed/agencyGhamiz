@@ -3,8 +3,8 @@
 
 .marquee-container{
   position: relative;
-  background-color: $light-purple;
-  color: $font-color;
+  background-color: $shell-white;
+  color: $background-fierce-dark;
   padding: 15px 0;
   font-weight: 500;
   font-size: 28px;
@@ -34,7 +34,7 @@
   border: 3px solid black;
   border-radius: 25px;
 }
-.marquee__star{
+.marquee__star2{
   display: flex;
   align-items: center;
   justify-content: center;

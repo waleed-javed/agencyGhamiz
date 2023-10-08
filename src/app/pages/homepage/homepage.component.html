@@ -6,9 +6,7 @@
 <!-- Hero Section -->
 <section>
     <div class="hero-container">
-
-        <!-- <img class="hero-grid"  src="../../../assets/images/columnerGrid.svg" alt="grid-columns"> -->
-        <img class="hero-grid"  src="../../../assets/images/heroGridWithNoise.svg" alt="grid-columns">
+        <img class="hero-grid"  src="../../../assets/images/columnerGrid.svg" alt="grid-columns">
         <div class="title-container">
             <h1>We Make Apps,<br> Websites &amp; Brands</h1>
             <h2>
@@ -25,8 +23,8 @@
 </section>
 
 <!-- Services -->
-<section class="services-container spacer" >
-    <section class="services-title-container">
+<section class="services-container spacer-bottom" >
+    <section class="services-title-container spacer-top">
         <h1>Our Services</h1>
         <h2>
             <span class="long-dash"></span>
@@ -34,14 +32,23 @@
         </h2>
     </section>
     
-    <section class="spacer">
+    <section class="spacer-top">
         <app-agency-services></app-agency-services>
     </section>
 </section>
 
 <!--portfolio bnanner  -->
-
+<section>
+ <app-banner projects="7" awards="2"></app-banner>
+</section>
 <!-- Portfolio section -->
+<section>
+    <app-portfolio-projects></app-portfolio-projects>
+</section>
+<!-- Marquee -->
+<!-- <section class="ticker-container">
+    <app-ticker-marquee-light></app-ticker-marquee-light>
+</section> -->
 
 <!-- mission statement -->
 

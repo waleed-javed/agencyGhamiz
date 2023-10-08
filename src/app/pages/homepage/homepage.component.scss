@@ -11,6 +11,8 @@
 }
 
 .hero-grid{
+    background:url(https://grainy-gradients.vercel.app/noise.svg);
+    filter: contrast(170%);
     position: absolute;
     top: -40px;
     left: 0;
@@ -39,7 +41,6 @@
         flex-direction: row;
         align-items: center;
         gap:1rem;
-        // background-color: red;
         margin: 32px 0;
         font-size: 1.68rem;
         font-weight: 300;
@@ -64,9 +65,15 @@
     background: $background-fierce-dark;
 }
 
-.spacer{
-    margin: 7rem;
+.spacer-top{
+    margin: 7rem 0 0 0;
 }
+
+.spacer-bottom{
+    margin: 0 0 7rem 0;
+}
+
+
 // services styles
 .services-container{
     display: flex;
@@ -104,7 +111,6 @@
         height: 5px;
         margin-top: 5px;
         background: $background-fierce-dark;       
-        // background: $light-purple;       
     }
 
 }

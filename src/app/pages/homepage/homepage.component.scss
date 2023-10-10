@@ -116,60 +116,130 @@
 }
 
 
-// Responsive xsm:320
+
+// min 375 to max 480
+@media (min-width: $xsm) and (max-width:$sm){
+
+    .hero-grid{ display: none;}
+
+    .title-container {
+        padding: none ;
+        overflow: hidden;
+        // margin-top: 4rem;
+    
+        h1{
+            font-size: 2.5rem;
+            line-height: 50px;
+        }
+    
+        h2{
+            margin-top: 6px;
+            font-size: 1rem;
+            font-weight: 300;
+            font-family: "Lato";
+            .long-dash{
+                width: 18px;
+                height: 3px;
+                margin-top: 5px;
+                background: $light-purple;       
+            }
+        }
+            
+    }
+
+   .ticker-container{
+        padding: 1rem 0;
+        margin: -2rem 0 0 0;
+        background: $background-fierce-dark;
+    }
+
+
+     
+    .spacer-top{
+        margin: 2.2rem 0 0 0;
+    }
+
+    .spacer-bottom{
+        margin: 0 0 3rem 0;
+    }
+
+    
+    .services-title-container{
+        h1{
+            font-size: 3rem;
+        }
+
+        h2{
+            line-height: 20px;
+            gap:0.21rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+            font-family: "Lato";
+            
+            .long-dash{
+                width: 16px;
+                height: 3px;
+                margin-top: 5px;
+                background: $light-purple;       
+            }
+        }
+    }
+
+}
+
+
+// Responsive xsm:375
 
 @media (max-width: $xsm) {
 
     .hero-grid{ display: none;}
 
     .title-container {
-        padding: 1rem ;
-        text-align: center;
+        padding: none ;
+        overflow: hidden;
+        height: 40vh;
+        margin-top: 4rem;
     
         h1{
             font-size: 2.5rem;
-            line-height: 1;
+            line-height: 50px;
         }
     
         h2{
-            margin-top: 6px;
-            font-size: 1rem;
+            margin-top: 2.2rem;
+            font-size: 1.2rem;
             font-weight: 300;
             font-family: "Lato";
-            .long-dash{
-                display: none;       
-            }
-        }
-            
-    }
-}
-
-// min 320 to max 480
-@media (min-width: $xsm) and (max-width:$sm){
-
-    .hero-grid{ display: none;}
-
-    
-    .title-container {
-        padding: 1rem ;
-        text-align: center;
-        h1{
-            font-size: 2.5rem;
-            line-height: 1;
-
-        }
-    
-        h2{
-            margin-top: 6px;
-            font-size: 1rem;
-            font-weight: 300;
-            font-family: "Lato";
-            .long-dash{
-                display: none;       
-            }
         }
             
     }
 
-}
 
+    
+    .spacer-top{
+        margin: 1rem 0 0 0;
+    }
+
+    .spacer-bottom{
+        margin: 0 0 3rem 0;
+    }
+
+    
+    .services-title-container{
+        h1{
+            font-size: 2.5rem;
+        }
+
+        h2{
+            line-height: 20px;
+            gap:1rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-family: "Lato";
+        }
+    }
+
+    .long-dash{
+        display: none;       
+    }
+}

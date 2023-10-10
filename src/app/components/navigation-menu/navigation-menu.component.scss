@@ -133,7 +133,8 @@ nav{
     }
     
     .action-btn-container,
-    .primary-navigation{
+    .primary-navigation,
+    .active{
         display: none;
     }
     
@@ -141,12 +142,15 @@ nav{
 
 // Mobile responsiveness
 @media (max-width: 35em ) {
+    .toolbar-container {
+        justify-content: center;
+    }
     .logo{
         font-size: min($logo-font-mobile , $logo-font-tab);
     }
 
     .action-btn-container,
-    .primary-navigation{
+    nav,.active{
         display: none;
     }
     

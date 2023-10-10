@@ -4,3 +4,25 @@
     gap: 5rem;
     padding: 1rem;
 }
+
+// 560
+@media (max-width:60em){
+
+    .service-container{
+        display: grid;
+        grid-template-columns: repeat(2 , 300px);
+        gap: 2rem;
+        padding: 1rem;
+    }
+}
+
+// 560
+@media (max-width:40em){
+
+    .service-container{
+        display: flex ;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}

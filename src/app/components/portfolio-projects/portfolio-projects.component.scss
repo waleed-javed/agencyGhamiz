@@ -112,11 +112,97 @@ section{
 }
 
 
+.mobile{
+    display: none;
+}
 
 
 
+@media (min-width: $xsm) and (max-width:$sm)
+{
+    .mobile{ display: block;}
+    .not-mobile{ display: none;}
+
+    section{
+        padding: none;
+
+        .project{
+            display: flex;
+            flex-direction: column;
+            
+            .project-demo-container{
+                margin: 1.2rem 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                .project-demo{
+                    width: 65vw;
+                    border-radius: 16px;
+                    box-shadow: $light-purple 1px 1px 5px;
+                }
+
+                .project-stats-container{
+                    display: flex;
+                    flex-direction: column;
+                    color: #fff;
 
 
+                    .project-stats{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 1rem 2.5rem;
+                        text-align: left;
+                        
+                        .project-title{
+                            margin-top: 1rem;
+                            font: 2rem "Recoleta";
+                        }
+                        .project-subtitle{
+                            font: 1rem "Recoleta";
+                        }
+                        .project-details{
+                            margin-top: 1rem;
+                            font: 1.2rem 400 "Lato";
+                            text-align: justify;
+                            line-height: 20px;
+                        }
+
+                        .project-btn{
+                            display: flex;
+                            font: .7rem "Lato";
+                            font-weight: 500;
+                            margin: 1.5rem 0 0 0;
+                            
+                            a{
+                                text-decoration: none;
+                                
+                                span{
+                                    // box-shadow: black 1px 2px 5px;
+                                    background-color: $light-purple;
+                                    color: $shell-white;
+                                    font-weight: 600;
+                                    padding: 0.5rem 2rem;
+                                    border-radius: 28px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive below xsm:320
+@media (max-width: $xsm) {
+   section{
+       display: none;
+   } 
+}
 
 
 

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger)
 
 @Component({
   selector: 'app-portfolio-projects',
@@ -7,6 +10,7 @@ import { gsap } from 'gsap';
   styleUrls: ['./portfolio-projects.component.scss']
 })
 export class PortfolioProjectsComponent {
+
 
   
   ngOnInit(){
@@ -16,58 +20,30 @@ export class PortfolioProjectsComponent {
 
   animate(){
 
+    // get all images
+    const projectDemoImages = gsap.utils.toArray(".project-demo:not(:first-child)");
     
+    // set images off screen verticaly
+    gsap.set(projectDemoImages,{yPercent:101});
 
-let details = gsap.utils.toArray(".desktopContentSection:not(:first-child)")
-let photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)")
+    // animate them as scroll happens
+    
+    const animateImages = gsap.to(projectDemoImages,{
+      yPercent:0, duration:1.5, stagger:1.5
+    });
 
+    
+        ScrollTrigger.create({
+          trigger:".project-gallery",
+          start:"top top",
+          end:"bottom bottom",
+          pin:".projects-images-container",
+        })
 
-gsap.set(photos, {yPercent:101})
-
-const allPhotos = gsap.utils.toArray(".desktopPhoto")
-
-
-// create
-let mm = gsap.matchMedia();
-
-// add a media query. When it matches, the associated function will run
-mm.add("(min-width: 600px)", () => {
-
-  // this setup code only runs when viewport is at least 600px wide
-  console.log("desktop")
-	
-  ScrollTrigger.create({
-	trigger:".gallery",
-	start:"top top",
-	end:"bottom bottom",
-	pin:".right"
-})
-
-//create scrolltrigger for each details section
-//trigger photo animation when headline of each details section 
-//reaches 80% of window height
-details.forEach((detail:any, index:any)=> {
-
-	let headline = detail.querySelector("h1")
-	// let animation = gsap.timeline().to(photos[index], {yPercent:0}).set(allPhotos[index], {autoAlpha:0})
-	
-  ScrollTrigger.create({
-		trigger:headline,
-		start:"top 80%",
-		end:"top 50%",
-		// animation:animation,
-		scrub:true,
-		markers:false
-	})
-})
-	
-	
-  
-  return () => { // optional
-    // custom cleanup code here (runs when it STOPS matching)
-	  console.log("mobile")
-  };
-});
+    
+    //let mm = gsap.matchMedia();
+    //add a media query. When it matches, the associated function will run
+    //mm.add("(min-width: 600px)", () => {});
 
 
   }

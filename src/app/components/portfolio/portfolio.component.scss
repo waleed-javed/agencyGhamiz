@@ -1,0 +1,40 @@
+
+@use "../../../abstract/index" as *;
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: $background-fierce-dark;
+    
+    // .title{
+    //     background: linear-gradient( 80deg, $background-fierce-dark 1%,$light-purple ,$background-fierce-dark);
+    //     box-shadow: inset black 10px 0px 15px;
+    //     display: flex;
+    //     justify-content: center;
+    //     text-align: center;
+    //     padding: 0.5rem;
+    //     border-radius: 16px;
+    //     // margin: 5rem;
+    //     font-family: "Recoleta";
+    //     h1{
+    //         text-shadow: $light-purple 1px 2px 10px;
+    //         font-size: 3.5rem;
+    //         font-weight: 400;
+    //     }
+        // color: white;
+    // }
+    // .title{
+    //     display: flex;
+    //     justify-content: center;
+    //     text-align: center;
+    //     padding: 1.75rem 0 3rem 0;
+    //     font-family: "Recoleta";
+    //     h1{
+    //         text-shadow: $light-purple 1px 2px 10px;
+    //         font-size: 3.5rem;
+    //         font-weight: 400;
+    //     }
+    //     color: white;
+    // }
+}

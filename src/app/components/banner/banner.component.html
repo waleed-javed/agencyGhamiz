@@ -4,8 +4,8 @@
             <div class="banner-left-side">
                 <h1>Our Portfolio</h1>
                 <div class="portfolio-stats">
-                    <p class="stats"><span>{{projects}}</span> Completed Projects</p>
-                    <p class="stats"><span>{{awards}}</span> Awards &amp; Features</p>
+                    <p class="stats" *ngIf="showProjects.length > 0 && showProjects =='true' "><span>{{projects}}</span> Completed Projects</p>
+                    <p class="stats" *ngIf="showAwards.length > 0 && showAwards =='true' "><span>{{awards}}</span> Awards &amp; Features</p>
                 </div>
             </div>
             <div class="banner-right-side">

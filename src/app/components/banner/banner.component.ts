@@ -7,6 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class BannerComponent {
 
+  @Input() showProjects:string =""
   @Input() projects?:string
+  
+  @Input() showAwards:string = ""
   @Input() awards?:string
 }

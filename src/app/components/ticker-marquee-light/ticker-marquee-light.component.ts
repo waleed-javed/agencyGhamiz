@@ -9,35 +9,36 @@ import {gsap} from 'gsap';
 export class TickerMarqueeLightComponent {
 
   @Input("bgColor") bgColor!:string;
-  constructor( @Inject(DOCUMENT) private documnt:Document){}
+  constructor( @Inject(DOCUMENT) private document:Document){}
   
   ngOnInit(): void {
-    this.animate();    
+    this.animation();    
   }
 
-  animate(){
-    let firstItem= this.documnt.querySelectorAll(".first"); 
-    let secondItem= this.documnt.querySelectorAll(".second"); 
-    let star = this.documnt.querySelectorAll(".marquee__star2")
+  animation() {
+    const scrollers = this.document.querySelectorAll('.scroller');
     
-    let tl = gsap.timeline();
-
-    gsap.fromTo(star,{rotationX:20, scale:1.5,stagger:5},{rotationY:360, duration:2.3, ease:"power4.inOut", repeat:-1});
+    // If a user hasn't opted in for recuded motion, then we add the animation
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      addAnimation();
+    }
     
-    tl.fromTo(firstItem,{x:0},{
-      x:-2400,
-      duration:12.5,
-      ease:"linear",
-    });
+    function addAnimation() {
+      scrollers.forEach((scroller:any) => {
+        scroller.setAttribute('data-animated', 'true');
+        scroller.setAttribute('data-direction', 'left');
+        scroller.setAttribute('data-speed', 'slow');
 
-    tl.fromTo(secondItem,{x:0},{
-      x:-2400,
-      duration:12.5,
-      ease:"linear",
-      delay:-12.5,
-    });
+        const scrollerInner: any = scroller.querySelector('.scroller__inner');
+        const scrollerContent = Array.from(scrollerInner.children);
 
-    tl.repeat(Infinity);
+        scrollerContent.forEach((item: any) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute('aria-hidden', true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+      });
+    }
   }
 
 }

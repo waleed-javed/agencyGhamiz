@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Montserrat:ital,wght@0,600;0,700;1,600&family=Playfair+Display:ital,wght@0,400;1,600&family=Roboto:wght@100&display=swap');
 
 // Thin
 @font-face {
@@ -9,18 +8,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/fonts/Lato/Lato-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/fonts/Lato/Lato-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
 
 // Regular
 @font-face {
@@ -30,12 +17,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 // Light
 @font-face {
@@ -43,20 +24,6 @@
     src: url('../assets/fonts/Recoleta/Recoleta-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/fonts/Lato/Lato-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/fonts/Lato/Lato-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
 }
 
 //Recoleta Medium
@@ -67,11 +34,6 @@
     font-style: normal;
 }
 
-// Lato Italic
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/fonts/Lato/Lato-Italic.ttf') format('truetype');
-}
 
 //Bold
 @font-face {
@@ -88,19 +50,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
 
 // Black
 @font-face {
@@ -108,18 +58,4 @@
     src: url('../assets/fonts/Recoleta/Recoleta-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/fonts/Lato/Lato-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/fonts/Lato/Lato-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
 }

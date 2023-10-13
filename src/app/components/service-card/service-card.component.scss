@@ -34,7 +34,8 @@
 
         font-family: "Recoleta";
         font-weight: 500;
-        font-size: 28px;
+        // font-size: 28px;
+        font-size: $desktop-items-title-font-size;
         line-height: 36px;
     }
 }
@@ -47,7 +48,8 @@
     p{
         font-family: "Lato";
         font-weight: 500;
-        font-size: 16px;
+        // font-size: 16px;
+        font-size: $desktop-items-paragrapgh-font-size;
         line-height: 28px;
     }
 }
@@ -63,8 +65,12 @@
     .logo-container-mobile{
         display: flex;
         justify-content: center;
-        width: 70px;
         height: 70px;
+
+        // fix the width so that it does not disturb the row
+        img{
+            width: 100px;
+        }
         
     }
     
@@ -90,9 +96,10 @@
         gap: 0.2rem;
         
         p{
+            margin: 0.2rem 0 0.3rem 0;
             font-family: "Lato";
             font-weight: 500;
-            font-size: $mobile-project-paragraph-font-size;
+            font-size: $mobile-items-paragrapgh-font-size;
         }
     }
         

@@ -15,17 +15,6 @@
         transition: 0.2s ease-in-out;
     }
 }
-
-
-// @keyframes glowing {
-//     0% {
-//       transform: rotate(0);
-//     }
-//     100% {
-//       transform: rotate(360deg);
-//     }
-//   }
-  
  
 .logo-container{
     display: flex;
@@ -61,4 +50,69 @@
         font-size: 16px;
         line-height: 28px;
     }
+}
+
+
+// responsive styles
+
+.card-item-mobile{
+    display: flex;
+    flex-direction: row;
+    padding: 0.3rem 0.1rem;
+ 
+    .logo-container-mobile{
+        display: flex;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        
+    }
+    
+    .card-row-mobile{
+        display: flex;
+        flex-direction: column;
+        padding:8px 0 2px 13px;
+        
+        .title-container-mobile{
+            h1{
+            padding-left: 3px;
+            font-family: "Recoleta";
+            font-weight: 400;
+            font-size: $mobile-items-title-font-size;
+            line-height: 36px;
+        }
+    }
+    
+    .description-container-mobile{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+        
+        p{
+            font-family: "Lato";
+            font-weight: 500;
+            font-size: $mobile-project-paragraph-font-size;
+        }
+    }
+        
+    .chip-item{
+        display: flex;
+        padding: 6px 12px;
+        border-radius: 32px;
+        border: 1px solid black;
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: $mobile-services-chip-font-size;
+    }
+    
+    }
+}
+
+
+// responsive
+.mobile{ display: none; }
+@media (max-width:$md) {
+    .desktop{ display: none; }
+    .mobile{ display:block; }
 }

@@ -88,7 +88,11 @@
 
 // for devices smaller then 768 slow down the speed
 @media (max-width: $md) {
-  .scroller[data-speed="slow"] {
-    --_animation-duration: 120s;
-  }
+
+  .scroller[data-speed="slow"] { --_animation-duration: 120s; }
+  
+  .scroller__inner{ font-size: 16px; padding: 8px 0; }
+  
+  .marquee__star { scale: 1; }
+
 }

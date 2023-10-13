@@ -131,62 +131,62 @@ section{
             flex-direction: column;
             
             .project-demo-container{
-                margin: 1.2rem 0;
-                display: flex;
+                margin: 1rem 0;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
 
                 .project-demo{
-                    width: 65vw;
-                    border-radius: 16px;
-                    box-shadow: $light-purple 1px 1px 5px;
+                    // width: 65vw;
+                    width: 90vw;
+                    // border-radius: 16px;
+                    border-radius: 4px;
+                    // box-shadow: $light-purple 1px 1px 5px;
                 }
-
+                
                 .project-stats-container{
-                    display: flex;
-                    flex-direction: column;
                     color: #fff;
-
-
+                    
                     .project-stats{
-                        display: flex;
-                        flex-direction: column;
-                        padding: 1rem 2.5rem;
-                        text-align: left;
+                        padding: 1.438rem 1.5rem;
+                        align-items: center;
+                        text-align: center;
                         
                         .project-title{
                             margin-top: 1rem;
-                            font: 2rem "Recoleta";
+                            font-family: "Recoleta";
+                            font-size: $mobile-project-title-font-size;
                         }
                         .project-subtitle{
-                            font: 1rem "Recoleta";
+                            font-family: "Recoleta";
+                            font-weight: 400;
+                            font-size: $mobile-project-subtitle-font-size;
                         }
                         .project-details{
-                            margin-top: 1rem;
-                            font: 1.2rem 400 "Lato";
+                            margin: 1.43rem 0;
+                            font-family: "Lato";
+                            font-size: $mobile-project-paragraph-font-size;
                             text-align: justify;
-                            line-height: 20px;
+                            line-height: 120%;
                         }
 
                         .project-btn{
+                            font-family: "Lato";
+                            font-weight: 600;
+                            font-size :$mobile-btns-font-size;
                             display: flex;
-                            font: .7rem "Lato";
-                            font-weight: 500;
-                            margin: 1.5rem 0 0 0;
-                            
-                            a{
-                                text-decoration: none;
-                                
-                                span{
-                                    // box-shadow: black 1px 2px 5px;
-                                    background-color: $light-purple;
-                                    color: $shell-white;
-                                    font-weight: 600;
-                                    padding: 0.5rem 2rem;
-                                    border-radius: 28px;
-                                }
+                            justify-content: center;
+
+                            a { text-decoration: none; }
+                            a > span{
+                                width: 9rem;
+                                display: flex;
+                                justify-content: center;
+                                padding: 0.5rem 0;
+                                background-color: $light-purple;
+                                color: $shell-white;
+                                border-radius: 28px;
                             }
                         }
                     }
@@ -203,162 +203,3 @@ section{
        display: none;
    } 
 }
-
-
-
-
-
-
-
-// //////////////////////////////////////////
-// // test code
-
-// // section{
-   
-// //     .project-container{
-// //         display: flex;
-
-// //         .project-stats-container{
-
-// //             // display: flex;
-// //             // flex-direction: column;
-// //             width: 50%;
-// //             margin: auto;
-// //             .project-stats{
-// //                 width: 80%;
-// //                 padding: 5rem 12rem 17rem 2rem;
-// //                 display: flex;
-// //                 flex-direction: column;
-// //             }
-// //         }
-
-// //         .project-demo-container{
-// //             display: flex;
-// //             position: relative;
-// //             width: 40vw;
-// //             height:40vw;
-// //             margin: 5rem 7rem 0 0;
-// //             border-radius: 16px;
-// //             overflow: hidden;
-// //             box-shadow:4px 4px 4px rgba(166, 132, 211, 0.66);
-// //             .project-demo{
-// //                 position: absolute;
-// //             }
-// //         }
-// //     }
-// // }
-
-
-// // test code ends
-
-
-// section{
-//     background-color: $background-fierce-dark;
-// }
-
-// .project-container{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-    
-// }
-
-
-// // .order-1{
-// // order: 1;
-// // }
-
-// // .order-2{
-// // order: 2;
-// // }
-
-// .project{
-//     display: flex;
-//     width: 100vw;
-//     justify-content: space-between;
-
-//     .project-demo-container{
-//         // box-shadow: $light-purple 0px 2px 10px;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         // background: $light-purple;
-//         width: 50vw;
-
-//         .project-demo{
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             width: 50vw;
-//             // width: 80vh;
-//             margin: 1rem;
-//             border-radius: 12px;
-//             background: no-repeat;
-//             object-fit: cover;
-//         }
-//     }
-    
-//     .project-stats-container{
-//         display: flex;
-//         flex-direction: column;
-//         // flex: 0.5;
-//         width: 50vw;;
-//         padding:8rem 4rem;
-//         align-items: center;
-        
-        
-//         .project-stats{
-//             display: flex;
-//             justify-content: flex-start;
-//             flex-direction: column;
-//             gap: 1.2rem;
-//             color: $shell-white;
-            
-//         .project-title{
-//             font-family: "Recoleta";
-//             font-size: 3rem;
-//             font-weight: 400;
-//             // text-shadow: black 1px 2px 10px;
-//         }
-
-//         .project-subtitle{
-//             font-family: "Recoleta";
-//             font-weight: 400;
-//             font-style: normal;
-//             line-height: 120%;
-//             font-size: 1.5rem;
-//             opacity: 0.8;
-//         }
-
-//         .project-details{
-//             display: flex;
-//             font-family: "Lato";
-//             font-weight: 500;
-//             font-size: 1.2rem;
-//         }
-
-//         .project-btn{
-//             display: flex;
-//             font-size: 1.2rem;
-//             font-family: "Lato";
-//             font-weight: 500;
-//             margin: 1rem 0 0 0;
-            
-//             a{
-//                 text-decoration: none;
-                
-//                 span{
-//                     // box-shadow: black 1px 2px 5px;
-//                     background-color: $light-purple;
-//                     color: $shell-white;
-//                     font-weight: 600;
-//                     padding: 0.5rem 2rem;
-//                     border-radius: 28px;
-//                     border: 1px solid $shell-white;
-//                 }
-//             }
-//         }
-
-//     }
-// }
-// }

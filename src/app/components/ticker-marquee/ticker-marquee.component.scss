@@ -1,79 +1,5 @@
 @use "../../../abstract/index" as *;
 
-
-// .marquee-container{
-//   position: relative;
-//   background-color: $light-purple;
-//   color: $font-color;
-//   padding: 15px 0;
-//   font-weight: 500;
-//   font-size: 28px;
-//   font-family: "Lato";
-//   text-transform: uppercase;
-//   overflow: hidden;
-// }
-
-// .marquee__inner{
-//   display: flex;
-//   width: fit-content;
-//   flex: auto;
-//   flex-direction: row;
-
-//   .second{
-//     background: red;
-//   }
-// }
-
-// .marquee__part{
-//   display: flex;
-//   align-items: center;
-//   flex-shrink: 0;
-//   padding: 0 4px;
-// }
-
-.marquee__project {
-  // display: flex;
-  margin: 0 0.3rem;
-  padding: 0.2rem 0.5rem;
-  border: 3px solid black;
-  border-radius: 25px;
-}
-
-.marquee__star {
-  display: flex;
-  align-items: center;
-  // background: red;
-  justify-content: center;
-  scale: 1.5;
-  // width: 20px;
-  // height: 20px;
-  // margin: 0 1rem;
-}
-
-// // max  320
-// @media (max-width:$xsm) {
-//   .marquee-container{
-//     display: none;
-//   }
-// }
-
-// // min 320 to max 480
-// @media (min-width: $xsm) and (max-width:$sm){
-
-// .marquee-container{
-//   padding: 5px 0;
-//   font-size: 18px;
-//   font-family: "Lato";
-//   text-transform: uppercase;
-// }
-
-// .marquee__project{
-//   border: 2px solid rgba(0, 0, 0, 0.505);
-// }
-
-// }
-
-
 .scroller {
   max-width: 100vw;
 }
@@ -90,6 +16,21 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+
+.marquee__star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 1.5;
+}
+
+.marquee__project {
+  margin: 0 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border: 3px solid black;
+  border-radius: 25px;
 }
 
 .scroller[data-animated="true"] {
@@ -109,6 +50,7 @@
   animation: star 3s var(--_animation-direction, forwards) linear infinite;
 }
 
+// dynamics variables
 .scroller[data-direction="right"] {
   --_animation-direction: reverse;
 }
@@ -125,6 +67,8 @@
   --_animation-duration: 60s;
 }
 
+
+// animation
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));
@@ -132,12 +76,19 @@
 }
 
 @keyframes star {
-
   from {
     transform: rotate(0deg);
   }
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+// for devices smaller then 768 slow down the speed
+@media (max-width: $md) {
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 120s;
   }
 }

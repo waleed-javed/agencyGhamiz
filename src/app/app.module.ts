@@ -13,6 +13,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { TickerMarqueeLightComponent } from './components/ticker-marquee-light/ticker-marquee-light.component';
 import { PortfolioProjectsComponent } from './components/portfolio-projects/portfolio-projects.component';
 import { FooterNavigationsComponent } from './components/footer-navigations/footer-navigations.component';
+import { MissionStatementComponent } from './components/mission-statement/mission-statement.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FooterNavigationsComponent } from './components/footer-navigations/foot
     TickerMarqueeLightComponent,
     PortfolioProjectsComponent,
     FooterNavigationsComponent,
+    MissionStatementComponent,
   ],
   imports: [
     BrowserModule,

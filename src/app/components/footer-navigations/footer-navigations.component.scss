@@ -7,37 +7,51 @@ section{
 .footer-container{
     display: flex;
     color: white;
-    padding: 2rem 0;
-    font-family: "Lato";
+    // flex-direction: column;
+    padding: 6.813rem 9rem 0rem 9rem;
     justify-content: space-between;
-
+    gap: 4.5rem;
+    
     .footer-columns{
         flex-direction: column;
-        margin: 0 2rem;
-
+        
+        &:nth-child(3){
+            // background: red;
+            min-width: 220px;
+        }
+        &:nth-child(4){
+            // background: red;
+            min-width: 220px;
+        }
+        
         .company-container{
             flex-direction: column;
-            width: 60%;
+            width: 70%;
 
             .company-title {
-                font-size: 2rem;
-                font-weight: 400;
+                font-family: "Lato";
+                font-size: 2.5rem;
+                font-weight: bold;
             }
-
+            
             .company-subtitle{
                 font-size: 1rem;
-                font-weight: 400;
-                opacity: 0.7;
-                line-height: 20px;
+                font-family: "Lato";
+                font-weight: normal;
+                opacity: 0.4;
+                line-height: 23.3px;
             }
         }
-
+        
         .section-title{
-            font-size: 1.3rem;
-            font-weight: 500;
+            font-family: "Lato";
+            font-size: 1.375rem;
+            font-weight: normal;
+            line-height: 36px;
         }
-
+        
         .section-options{
+            font-family: "Lato";
             list-style: none;
 
             .section-option-item{
@@ -45,28 +59,78 @@ section{
                 color: white;
 
                 h3{
-                    font-weight: 500;
-                    font-size: 1rem;
-                    line-height: 28px;
-                    opacity: 0.7;
+                    font-weight: normal;
+                    font-size: 0.875;
+                    line-height: 23.3px;
+                    opacity: 0.4;
                 }
             }
         }
     }
 }
 
-.copyright-container{
+.socials-container{
+    display: flex;
+    color:white;
+    padding: 3.5rem 0 0 0;
+    justify-content: center;
+    gap: 7.5rem;
+    .social-items{
+        font-family: "Recoleta";
+        font-size: 1.375rem;
+        line-height: 36px;
+    }
+}
+
+.section-breaker{
+    display: flex;    
+    border-bottom: 1px solid grey;
+    border-bottom-style:ridge;
+    width: 70%;
+    opacity: 0.3;
+    margin: 2rem auto 0 auto;
+
+}
+
+.business-container{
     
     display: flex;
-    padding: 2rem 0;
-    font-family: "Recoleta";
+    flex-direction: column;
+    padding: 3.5rem 0;
+    font-family: "Lato";
+    gap: 3.5rem;
     color: white;
-    font-size: 1rem;
-    gap: 1rem;
     justify-content: center;
+    align-items: center;
+    
+
+    .business-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 9.25rem;
+
+        .business-item{
+            display: flex;
+            flex-direction: column;
+            .tag{
+                font-size: 1rem;
+                line-height: 22px;
+            }
+
+            .tag-details{
+                font-size: 1.738rem;
+                line-height: 2.75rem;
+
+            }
+        }
+
+    }
 
     .copyright-detais{
         align-items: center;
-        line-height: 28px;
+        font-size: 0.873rem;
+        line-height: 23.3px;
+        opacity: 0.5;
     }
 }

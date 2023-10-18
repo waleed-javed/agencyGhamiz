@@ -1,0 +1,72 @@
+@use "../../../abstract/index" as *;
+
+section{
+    background-color: $background-fierce-dark;
+}
+
+.footer-container{
+    display: flex;
+    color: white;
+    padding: 2rem 0;
+    font-family: "Lato";
+    justify-content: space-between;
+
+    .footer-columns{
+        flex-direction: column;
+        margin: 0 2rem;
+
+        .company-container{
+            flex-direction: column;
+            width: 60%;
+
+            .company-title {
+                font-size: 2rem;
+                font-weight: 400;
+            }
+
+            .company-subtitle{
+                font-size: 1rem;
+                font-weight: 400;
+                opacity: 0.7;
+                line-height: 20px;
+            }
+        }
+
+        .section-title{
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .section-options{
+            list-style: none;
+
+            .section-option-item{
+                text-decoration: none;
+                color: white;
+
+                h3{
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 28px;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.copyright-container{
+    
+    display: flex;
+    padding: 2rem 0;
+    font-family: "Recoleta";
+    color: white;
+    font-size: 1rem;
+    gap: 1rem;
+    justify-content: center;
+
+    .copyright-detais{
+        align-items: center;
+        line-height: 28px;
+    }
+}

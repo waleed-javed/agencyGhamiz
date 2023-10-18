@@ -14,16 +14,7 @@ section{
     
     .footer-columns{
         flex-direction: column;
-        
-        &:nth-child(3){
-            // background: red;
-            min-width: 220px;
-        }
-        &:nth-child(4){
-            // background: red;
-            min-width: 220px;
-        }
-        
+
         .company-container{
             flex-direction: column;
             width: 70%;
@@ -60,7 +51,7 @@ section{
 
                 h3{
                     font-weight: normal;
-                    font-size: 0.875;
+                    font-size: 0.875rem;
                     line-height: 23.3px;
                     opacity: 0.4;
                 }
@@ -96,7 +87,7 @@ section{
     
     display: flex;
     flex-direction: column;
-    padding: 3.5rem 0;
+    padding: 3.5rem 0 0 1.8rem;
     font-family: "Lato";
     gap: 3.5rem;
     color: white;
@@ -127,10 +118,90 @@ section{
 
     }
 
-    .copyright-detais{
-        align-items: center;
-        font-size: 0.873rem;
+    .copyright-details{
+        font-size: 0.88rem;
         line-height: 23.3px;
         opacity: 0.5;
     }
+}
+
+
+@media (max-width:$md) {
+    
+    .footer-container{
+        flex-direction: column;
+        padding: 3rem 5rem 0rem 2rem;
+        gap: 1.5rem;
+        
+        .footer-columns{
+            
+            .company-container{
+                width: 100%;
+    
+                .company-title {
+                    font-size: 1.3rem;
+                }
+                
+                .company-subtitle{
+                    font-size: 0.875rem;
+                    line-height: 23.3px;
+                }
+            }
+            
+            .section-title{
+                font-size: 1rem;
+                line-height: 36px;
+            }
+            
+            .section-options{
+    
+                .section-option-item{
+                    h3{
+                        font-size: .875rem;
+                        line-height: 23.3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .socials-container{
+        display: none;
+    }
+
+    .business-container{
+        padding: 1.5rem 0 1.5rem 2rem;
+        gap: 1.75rem;
+        align-items: flex-start;
+    
+    .business-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        .business-item{
+            display: flex;
+            flex-direction: column;
+            .tag{
+                font-size: 0.7rem;
+                line-height: 12px;
+            }
+
+            .tag-details{
+                font-size: 1.2rem;
+                line-height: 2rem;
+
+            }
+        }
+
+    }
+
+    .copyright-details{
+        font-size: 0.8rem;
+        line-height: 15.3px;
+        opacity: 0.3;
+    }
+}
+
 }

@@ -1,0 +1,129 @@
+@use "../../../abstract/index" as *;
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4.5rem 0;
+}
+
+.testimonial-title-container{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // margin-bottom:6.25rem; //100px
+    margin-bottom: 3.75rem; //60px;
+    font-family: "Recoleta";
+
+    .testimonial-title{
+        font-weight: normal;
+        line-height: 71.4px;
+        letter-spacing: 1.43px;
+        font-size: $desktop-section-title-font-size;
+    }
+    .testimonial-subtitle{
+        font-weight: normal;
+        line-height: 200%;
+        letter-spacing: 0.4px;
+        font-size: $desktop-section-subtitle-font-size;
+    }
+}
+
+.testimonial-cards-container{
+
+    .testimonial-cards-carousel{
+
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        .testimonial-card{
+
+            width: 30vw;
+            height: 42vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background-color:$light-purple;
+            // padding: 0 1.75rem;
+            border-radius: 24px;
+            border: none;
+            font-family: 'Lato';
+            color: white;
+            position: relative;
+
+            .quote{
+                position: absolute;
+                top: 4%;
+                right: 4%;
+            }
+
+            .testimonial-container{
+                padding: 2.5rem 1.75rem;
+
+                .card-title{
+                    margin: 0 0 1.87rem 0rem;
+                    // text-align: center;
+                }
+                
+                .card-testimony{
+                    // height: 15.5vh;
+                    // margin: 0 1rem;
+                    text-align: justify;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 6;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    margin-bottom: 1.87rem;
+                    line-height: 120%;
+                    letter-spacing: 0.63px;
+                    font-size: $desktop-items-paragrapgh-font-size;
+                }
+
+                .card-stats{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .card-testimony-provider{
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        .user-image-outline{
+                            display: flex;
+                            background: white;
+                            width: 47px;
+                            border-radius: 50px;
+                            padding: 2px;
+                            img{
+                                border-radius: 50px;
+                                width: 47px;
+                                height: 47px;
+                                object-fit: cover;
+                                // object-position:center center;
+                            }
+                        }
+
+                        .user-details{
+                            .user-title{
+                                font-size: 14px;
+                                line-height: 16.7px;
+                            }
+                            .user-designation{
+                                font-size: 11px;
+                                line-height: 17.1px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+}
